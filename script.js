@@ -8,9 +8,9 @@ document.getElementById('birthdayForm').addEventListener('submit', function(even
 
     // 생일이 0929일 경우 생일이 맞을 때 페이지로, 아니면 생일이 아닐 때 페이지로 이동
     if (birthday === "0929") {
-        window.location.href = `생일이 맞을 때.html?name=${name}`;
+        window.location.href = `birthday-success.html?name=${name}`;
     } else {
-        window.location.href = "생일이 아닐때.html";
+        window.location.href = "coming-soon.html.html";
     }
 });
 
