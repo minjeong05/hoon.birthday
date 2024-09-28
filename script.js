@@ -10,7 +10,7 @@ document.getElementById('birthdayForm').addEventListener('submit', function(even
     if (birthday === "0929") {
         window.location.href = `birthday-success.html?name=${name}`;
     } else {
-        window.location.href = "생일이 아닐때.html";
+        window.location.href = "coming-soon.html";
     }
 });
 
