@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>생일 축하</title>
+    <link rel="stylesheet" href="style.css"> <!-- 스타일 파일 연결 -->
+</head>
+<body>
+    <div class="phone"> <!-- 휴대폰 컨테이너 사용 -->
+        <div class="phone-header">축하합니다</div>
+      
+        <h1>오늘이 생일이군요!</h1>
+        <h2>행복한 하루를 보낼 준비가 되었나요?</h2>
+        <img src="birthday-cake.jpg" alt="생일 케이크" style="width: 100%; border-radius: 10px;"> <!-- 이미지 크기 조정 -->
+
+        <button onclick="goToLetterConfirmation()">편지 확인하러 가기</button>
+        
+        <div class="phone-footer"></div> <!-- 하단 여백 추가 -->
+    </div>
+
+    <script>
+        function goToLetterConfirmation() {
+            window.location.href = "letter-confirmation.html";
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

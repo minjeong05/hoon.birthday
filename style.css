@@ -1,0 +1,129 @@
+/* 기본 스타일 */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #a7d3e0, #e0f7fa); /* 파란색 그라데이션 배경 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 화면 전체 높이 */
+}
+
+/* 휴대폰 모양의 컨테이너 */
+.phone {
+    width: 375px; /* 휴대폰 너비 */
+    height: 667px; /* 휴대폰 높이 */
+    background-color: #fff;
+    border-radius: 40px; /* 둥근 모서리 강조 */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden; /* 내용이 넘칠 경우 숨김 */
+}
+
+/* 휴대폰 상단 */
+.phone-header {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #305a64;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* 컨테이너 스타일 */
+.container {
+    text-align: center; /* 텍스트 가운데 정렬 */
+}
+
+/* 파티 초대장 제목 스타일 */
+.invite-title {
+    font-size: 24px; /* 제목 크기 증가 */
+    color: #294e75;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* 파티 설명 텍스트 */
+.invite-text {
+    font-size: 14px; /* 텍스트 크기 증가 */
+    color: #333;
+    margin: 10px 0; /* 여백 조정 */
+}
+
+/* 입력 필드 스타일 */
+input[type="text"] {
+    width: calc(100% - 20px); /* 가로 전체 사용, 패딩 고려 */
+    padding: 12px; /* 패딩 증가 */
+    margin: 10px 0;
+    border: 1px solid #4da6ff; /* 파란색 테두리 */
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* 버튼 스타일 */
+button {
+    background-color: #007bff; /* 파란색 배경 */
+    color: white; /* 흰색 텍스트 */
+    padding: 12px 24px; /* 패딩 조정 */
+    border: none;
+    border-radius: 30px; /* 둥근 버튼 */
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px; /* 버튼을 아래로 내리기 위해 마진 추가 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 버튼 그림자 추가 */
+    transition: background-color 0.3s, transform 0.2s; /* 애니메이션 효과 */
+}
+
+button:hover {
+    background-color: #0056b3; /* 버튼 호버 효과 */
+    transform: translateY(-2px); /* 버튼 올라가는 효과 */
+}
+
+/* 하단 장식 */
+.phone-footer {
+    height: 40px;
+    background-color: #305a64;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+/* 비디오 스타일 */
+iframe {
+    width: 100%; /* 화면 너비에 맞춤 */
+    height: 315px; /* 고정 높이 */
+    border: none; /* 테두리 제거 */
+}
+
+/* 편지 내용 스타일 */
+#letterArea {
+    padding: 10px;
+    border: 1px dashed #92cfe7; /* 대시 테두리 */
+    border-radius: 5px;
+    margin-top: 20px;
+    display: none; /* 기본적으로 숨김 */
+}
+
+/* 모바일 대응 */
+@media (max-width: 768px) {
+    .invite-title {
+        font-size: 20px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    input[type="text"] {
+        font-size: 14px;
+    }
+}
